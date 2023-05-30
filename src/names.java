@@ -6,7 +6,7 @@ public class names {
 
     private int salary;
 
-    public names (String name, String secondName, String surname, int salary){
+    public names(String name, String secondName, String surname, int salary) {
 
         this.name = name;
         this.secondName = secondName;
@@ -15,24 +15,29 @@ public class names {
 
     }
 
-    public String getName(){
+    public String getName() {
 
         return this.name;
     }
 
-    public String getSecondName (){
+    public String getSecondName() {
 
         return this.secondName;
     }
 
-    public String getSurname (){
+    public String getSurname() {
 
         return this.surname;
     }
 
-    public int getSalary(){
+    public int getSalary() {
 
         return this.salary;
+    }
+
+    public String toString() {
+
+        return " имя: " + this.name + " отчество: " + this.secondName + " фамилия: " + this.surname + " зарплата: " + this.salary;
     }
 
 }

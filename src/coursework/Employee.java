@@ -1,10 +1,11 @@
+
+    package coursework;
+
+
 public class Employee {
 
 
-
-    public static class workers {
-
-        public  int id = 0;
+        private static  int id = 0;
         private String name;
         private String secondName;
 
@@ -14,21 +15,20 @@ public class Employee {
 
         private int department;
 
-        public workers(String name, String secondName, String surname, int salary, int department) {
+        public Employee(String name, String secondName, String surname, int salary, int department) {
 
             this.name = name;
             this.secondName = secondName;
             this.surname = surname;
             this.salary = salary;
             this.department = department;
+            this.id = 0;
+                    id++;
+
 
 
         }
 
-        public workers () {
-
-            id = id + 1;
-        }
 
         public String getName() {
 
@@ -76,4 +76,4 @@ public class Employee {
         }
 
     }
-}
+

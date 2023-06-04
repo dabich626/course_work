@@ -1,17 +1,24 @@
+import coursework.Employee;
+
 public class Main {
+
+    private  Employee [] employees = new Employee [10];
 
 
     public static void main(String[] args) {
 
-        int[] Employee = new int[10];
-        Employee.workers worker1 = new Employee.workers("Иван","Иванович","Иванов",20000,1);
+
+        employees [0] = new Employee("Иван","Иванович","Иванов",20000,1);
         System.out.println(worker1.toString());
+        System.out.println(worker1.id);
 
-        Employee.workers worker2 = new Employee.workers("Петр","Петрович","Петров", 350000, 3);
+        employees[1] = new Employee("Петр","Петрович","Петров", 350000, 3);
         System.out.println(worker2.toString());
+        System.out.println(worker2.id);
 
-        Employee.workers worker3 = new Employee.workers("Александр","Александрович","Александров",25000,4);
+        employees[2] = new Employee("Александр","Александрович","Александров",25000,4);
         System.out.println(worker3.toString());
+        System.out.println(worker3.id);
 
 
 
@@ -19,48 +26,51 @@ public class Main {
 
     }
 
-    public static int getSalarySum(int salarySum) {
-
-        int[] salary = {20000, 35000, 25000};
+    public static int sum() {
         int sum = 0;
-        for (int i : salary) {
-            sum += i;
+        for (Employee employee : emploees) {
+            sum += employee.getSalary();
 
             System.out.println("зумма выплат за месяц составляет " + sum);
         }
+        return sum;
 
-        public static int findAverageSalary (int average) {
+        public static int findMinSalary () {
 
-            sum = 0;
-            for (int i : salary) {
-                sum += i;
-
-            int workersCoast = 3;
-                average = sum / workersCoast;
-
-                return average;
-
-                System.out.println("средняя значение трат за месяц равняется " + average);
-
-                public static int findMinAndMax(){
-
-            int maxSalary = salary.length;
-            int minSalary = salary[0];
-
-            for (int i = 0; i < salary.length; i = i + 1) {
-
-                if (salary[i] < minSalary) {
-
-                    minSalary = salary[i];
-                }
-
-                if (salary[i] > maxSalary) {
-
-                    maxSalary = salary[i];
+            int min = Integer.MAX_VALUE;
+            int index = 0;
+            for (i = 0; i < emploees.length; i = i + 1) {
+                if (emploee[i].getSalary()< min){
+                     min = emploees[i].getSalary;
+                     index = i;
                 }
             }
 
-            System.out.println("максимальная зарплата " + maxSalary + " а минимальная " + minSalary);
+            public static int findMaxSalary (){
+
+                Employee max = null;
+                for(Employee employee : emploees) {
+                    if (employee == null){
+                        continue;
+                    }
+                    if(max == null || employee.getSalary()>min.getSalary()) {
+                        max == employee;
+                    }
+
+
+            }
+
+            static double average(){
+
+                    return sum()/emploees.lenght;
+                }
+
+
+                System.out.println("средняя значение трат за месяц равняется " + average);
+
+            }
+
+            System.out.println("максимальная зарплата " + max + " а минимальная " + min);
         }}
     }
         }

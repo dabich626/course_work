@@ -5,7 +5,9 @@
 public class Employee {
 
 
-        private static  int id = 0;
+        private  int id = 0;
+
+        private static int idCount;
         private String name;
         private String secondName;
 
@@ -22,8 +24,7 @@ public class Employee {
             this.surname = surname;
             this.salary = salary;
             this.department = department;
-            this.id = 0;
-                    id++;
+            this.id = idCount++;
 
 
 

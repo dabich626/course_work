@@ -44,7 +44,7 @@ public class Main {
         return sum;
     }
 
-    public static  void  findMinSalary() {
+    public static void  findMinSalary() {
 
         int min = Integer.MAX_VALUE;
         int index = 0;
